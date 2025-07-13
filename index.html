@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery with Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="gallery">
+<img src="https://unsplash.com/photos/a-person-standing-in-front-of-a-tall-red-light-7oz0fwGZORI" alt="Nature" onclick="openModal(this)">
+        <img src="img2.jpg" alt="Image 2" onclick="openModal(this)">
+        <img src="img3.jpg" alt="Image 3" onclick="openModal(this)">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
